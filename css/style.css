@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  SE UTILIZA PARA CREAR VARIABLES QUE SEAN REPETITIVAS EN EL SITIO WEWB COMO COLORES TAMAÑOS MARGENES ETC*/
+:root{
+--primary-color: #00ffff;
+--secundary-color: #0000ff;
+
+}
+
+#capturarDatos{
+background: #cecff1;
+}
+.fila .contForm{
+    width: 50%;
+    background: rgb(32, 134, 218);
+    color: white;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.fila .contForm h2{
+    font-size: 30px;
+    color: #a1f773;
+}
+
+.fila .contForm p{
+    font-size: 17px;
+}
+.contForm button{
+    font-size: 20px;
+    padding: 2px 10px;
+    
+}
+
+.contForm button:hover{
+    padding: 5px 25px;
+    background-color: rgb(169, 224, 247);
+    color: #575353;
+
+}
+
+.contForm form .formGroup{
+    padding: 10px 30px;
+    text-align: left;
+}
+
+form .formGroup label{
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+form .formGroup input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    
+
+}
+
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+
+}
+
+form .formGroup select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+
+}
+
+form{
+    margin:  40px;
+    
+}
+
+.fila .contAvatar{
+    text-align: center;
+    padding: 40px;
+    background: rgb(39, 236, 219);
+    width: 50%;
+}
+
+.fila .contAvatar img{
+    width: 200px;
+   
+}
+
+.fila .contAvatar h3{
+    font-size:  30px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.fila .contAvatar p{
+    font-size: 23px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/*Colores de fondo apartado avatar*/
+
+#contAvatar.azul{
+    background: #0000ff;
+}
+
+#contAvatar.negro{
+    background: #000000;
+     color: #f0f8ff;
+}
+
+#contAvatar.blanco{
+    background: white;
+}
+
+#contAvatar.rosado{
+    background: pink;
+}
+
+#conAvatar.amarillo{
+    background: yellow;
+}
+
+#contAvatar.negro h3,#contAvatar.negro p{
+    color: white;
+}
+
+.btn-nav{
+    position: absolute;
+    bottom: 100px;
+    background: #a1f773;
+    padding: 12px 40px;
+    text-decoration: none;
+    
+}
+
+
+
+
+body{
+    padding: 50px;
+    background: url(../img/halfcat-simdemocracy.gif);
+    background-repeat: repeat;
+    
+}
+
+.fila{
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    border: 2px solid var(--primary-color);
+}
+.fila .contBotones {
+     width: 50%;
+    background: #6c50ff;
+    text-align: center;
+    padding: 30px 20px; 
+
+}
+
+.contBotones h2 {
+    color: #f0f8ff;
+    font: 40px;
+    margin-bottom: 10px;
+}
+
+.contBotones button{
+    padding: 12px 30px;
+    background: var(--secundary-color);
+    color: var(--primary-color);
+    border: 1px solid yellow  ;
+    font-size: 10px;
+    margin: 12px;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #7fffd4;
+    padding: 15px 45px;
+     
+}
+
+.fila .contFigura{
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px;
+    background: #ff7f50 ;
+}
+
+
+.contFigura h2{
+    font-size:40px;
+    color: var(--primary-color);
+
+}
+
+.contFigura #figura {
+    
+    width: 180px;
+    height: 180px;
+    background: greenyellow;
+    margin: 40px auto;
+    transition: 1s;
+}
+.contFigura #otras {
+    
+    width: 180px;
+    height: 180px;
+    background: transparent;
+    margin: 40px auto;
+    transition: 1s;
+    
+   
+
+}
+
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg); 
+    /*
+    rotate=girar
+    scale= aumentar/disminuir
+    translate= posicion eje x,y
+    skew=Distorcionar
+    */
+
+}
+#figura.rombo{
+
+    transform: rotate(810045deg);  
+
+}
+
+#figura.rectangulo{
+    width: 300px;
+}
+
+
+#otras.triangulo{
+   
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    background-color: transparent;
+    border-bottom: 200px solid red;
+    border-right: 100px solid transparent;
+    transform: translate(0px, -340px);
+}
+#figura.rectangulov{
+    height: 300px;
+}
+
+#figura.arriba{
+    transform: translatey(-100px);
+}
+
+#figura.abajo{
+    transform: translatey(100px);
+}
+
+#figura.derecha{
+    transform: translate(100px);
+
+}
+
+#figura.izquierda{
+    transform: translate(-100px);
+
+}
+
+#figura.diagonal{
+    transform: translate(100px, -100px);
+
+}
+
+#figura.imagen{
+    width: 460px;
+    height: 270px;
+    background: url(../img/giphy.gif);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}
+
+#otras.luna {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #ff0000;
+    -webkit-box-shadow: 30px 10px 0 #ff0000;
+    box-shadow: 30px 10px 0 #ff0000;
+    transform: translate(0px, -200px);
+  
+}
+
+#otras.estrella5{
+    margin:10px;	
+    width:1px;
+    height:1px;
+    border-bottom:140px solid red;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    transform: translate(180px, -200px);
+    }
+    #otras.estrella5:before{
+    content:"";
+    display:block;
+    width:1px;
+    height:1px;
+    border-top:45px solid red;
+    border-left:60px solid transparent;
+    border-right:60px solid transparent;
+    position:relative;
+    top:45px;
+    left:-60px;
+    } 
+    #otras.estrella5:after{
+    content:"";
+    display:block;
+    width:1px;
+    height:1px;
+    border-bottom:50px solid greenyellow /*el color de fondo*/;
+    border-left:75px solid transparent;
+    border-right:75px solid transparent;
+    position:relative;
+    top:46px;
+    left:-75px;
+    }
+
+ #otras.infinity {
+        position: relative;
+        width: 212px;
+        height: 100px;
+        box-sizing: content-box;
+        transform: translate(0px, -200px);
+       
+      }
+      #otras.infinity:before,
+      #otras.infinity:after {
+        content: "";
+        box-sizing: content-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        border: 20px solid red;
+        border-radius: 50px 50px 0 50px;
+        transform: rotate(-45deg);
+      }
+      #otras.infinity:after {
+        left: auto;
+        right: 0;
+        border-radius: 50px 50px 50px 0;
+        transform: rotate(45deg);
+    }
+
+    #otras.yinyang {
+        width: 96px;
+        box-sizing: content-box;
+        height: 48px;
+        background: #eee;
+        border-color: red;
+        border-style: solid;
+        border-width: 2px 2px 50px 2px;
+        border-radius: 100%;
+        position: relative;
+        transform: translate(0px, -200px);
+      }
+      #otras.yinyang:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: #eee;
+        border: 18px solid red;
+        border-radius: 100%;
+        width: 12px;
+        height: 12px;
+        box-sizing: content-box;
+      }
+      #otras.yinyang:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: red;
+        border: 18px solid #eee;
+        border-radius: 100%;
+        width: 12px;
+        height: 12px;
+        box-sizing: content-box;
+      }
+      
+      #otras.egg {
+        display: block;
+        width: 126px;
+        height: 180px;
+        background: url(../img/Humpty_alexander_dumpty.jpg);
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        transform: translate(0px, -220px);
+        background-position: center;
+        
+      }
+    
+    
+
+
+
+
+
